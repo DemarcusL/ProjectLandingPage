@@ -3,19 +3,27 @@
 Describe at least:
 
 What hours will you be available to communicate?
+Lizzy: I am free any time expect on Tuesday nights and Sunday Mornings
 What platforms will you use to communicate (ie. Slack, phone …)?
+Lizzy: Phone, Slack, Discord, and Remo are the platforms I am available on.
 How often will you take breaks?
+Lizzy: I use the pomodoro technique to take breaks rangin from 5-15 minutes
 What is your plan if you start to fall behind?
+Lizzy: I will stop and communicate with my teammate what it is I am falling behind on and what steps we need to take to get back on track.
 How will you communicate after hours and on the weekend?
+Lizzy: by slack or phone unless I am asleep.
 What is your strategy for ensuring everyone’s voice is heard?
+We will take turns to hear each other out and work together to create one solution
 How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
+Lizzy: Listen to my teammate's questions, struggles, and concerns and respons respectively to build them up.
 Work Plan
 Explain your work plan to track whether everyone is contributing equally to all parts of the project, and that each person is working on “meaty” problems. This should prevent “lone wolf” efforts and “siloed” efforts.
-
 Describe at least:
+ Lizzy: We will cut our code time in half for each other. (IE. I work 30 mins and my teammate works 30mins.) We will take breaks when we both are worn out and make a time to come back to work together.
 
 How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
 What project management tool will be used?
+Lizzy: We will use git Flow
 Git Process
 Plan out what your team’s Git workflow looks like for coding tasks.
 
