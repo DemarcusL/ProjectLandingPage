@@ -1,5 +1,7 @@
 # TBARepo
 
+By: Lizzy and Demarcus
+
 Describe at least:
 
 What hours will you be available to communicate? D: Most days I am free after 8 am - 4 pm.
