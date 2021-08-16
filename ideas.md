@@ -7,3 +7,14 @@ Demarcus: So our idea we landed on was a landing page feature a a title card or 
 Lizzy: We decided on a landing page that showcases both of our biographies. We will start with a homepage with two different logos. When the user clicks on one or the other, it will take them to either one of our pages with a bio and a YT video or song we like. The bio will have a short about us and our goals for our SE career.
 
 Option 2: There would be nummerous images on a page. they would be chests or random thing. when clicked, you would be transitioned to a new page for a suprise!
+
+Milestones
+-onload, ask for name, store name. 
+-pokeball is clicked.
+-click should lead to personalized page
+
+-hover over for selfie image and appears w/ short bio.
+-'click to learn more' button loads at the bottom of bio. (empty page for now).
+-when scrolled down or clicked, name collected will have been added to a list of vistors.
+-look into a mouse over evt instead of on-click, can save code and build cohesiveness.
+-kev suggests getting our image linked to ur personal page first and then work on mouse over events.

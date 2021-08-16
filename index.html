@@ -15,34 +15,76 @@
                   <a href="#">Demarcus's bio</a>
             </nav>
       </header>
+      <h1>Choose your Pokeball</h1>
 <!-- Our two pokeball choices -->
       <div class="main-container">
-            <h1>Choose your Pokeball</h1>
+            
             <div class="d-pokeball">
                   <a href="PokeD.html">
-                        <img alt="red pokeball" src="Images/pokeball.png"
+                        <!-- <img alt="red pokeball" onclick="loadImageD()" src="Images/pokeball.png"
+                        width=150" height="70"> -->
+                        <img id="Demarcus-pokeball" alt="red pokeball" src="Images/pokeball.png"
                         width=150" height="70">
+                        <!-- will need to include selfie for render in images-->
+                       
                      </a>
+            <div id="renderDemarcusPic"> </div>
             </div>
             <div class="li-pokeball">
-                  <a href="PokeL.html">
-                        <img alt="red pokeball" src="Images/pokeball.png"
+                        <img id="Lizzy-pokeball" alt="red pokeball" src="Images/pokeball.png"
                         width=150" height="70">
-                     </a>
+                        <!-- will need to include selfie for render in images-->
+                     
+             <!-- <div id="renderLizzyPic">
+                  <div class="modal fade" id="Liz-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="Images/whale.jpg" alt="whale">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Welcome to my bio!</h5>
+                                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo reiciendis, nihil totam, quidem officiis aliquam quasi, culpa laborum illum assumenda non. Rerum amet maxime ab mollitia id adipisci molestiae?</p>
+                                      <br> 
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae placeat atque iusto deleniti quo aliquid at? Rerum aliquid, molestiae aut voluptates ratione illum illo numquam sit aliquam, inventore recusandae quasi.</p>
+                                      <a href="#" class="btn btn-primary">Click to learn more</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="Liz-Modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
             </div>
+             -->
       </div>
+      <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Liz-Modal">
+      Launch demo modal
+    </button> -->
 
-<div id="clearText">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, rem reprehenderit dignissimos dolorum eos maiores fuga obcaecati? Laudantium harum ipsam neque impedit ut magnam tenetur aspernatur accusamus molestiae consequuntur. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quia assumenda! Quidem perferendis recusandae quasi repudiandae vero nulla reprehenderit quo laborum odio facilis similique molestias accusamus, harum eos voluptatibus corrupti!
-</div>
+
 
 <div class="specialBall">
 <!-- Our third Pokeball -->
  <h3> Choose this one for a limited time offer you can't refuse ! </h3>
- <a href="#">
+ <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
       <img alt="golden pokeball" src="Images/golden-pokeball.png"
       width=150" height="70">
    </a>
+      <div>
+            <ul id="memeNames">
+
+            </ul>
+      </div>
 
 </div>
 
