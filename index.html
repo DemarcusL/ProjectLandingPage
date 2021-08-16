@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
       <title>Demarcus & Lizzy's project</title>
 </head>
+
 <body onload="nameOnLoad()">
       <header>
             <nav>
@@ -16,26 +19,24 @@
             </nav>
       </header>
       <h1>Choose your Pokeball</h1>
-<!-- Our two pokeball choices -->
+      <!-- Our two pokeball choices -->
       <div class="main-container">
-            
+
             <div class="d-pokeball">
-                  <a href="PokeD.html">
-                        <!-- <img alt="red pokeball" onclick="loadImageD()" src="Images/pokeball.png"
+                  <a href="PokeD.html"> <img id="Demarcus-pokeball" alt="red pokeball" src="Images/pokeball.png"
+                              width=150" height="70"> </a>
+                  <!-- <img alt="red pokeball" onclick="loadImageD()" src="Images/pokeball.png"
                         width=150" height="70"> -->
-                        <img id="Demarcus-pokeball" alt="red pokeball" src="Images/pokeball.png"
-                        width=150" height="70">
-                        <!-- will need to include selfie for render in images-->
-                       
-                     </a>
-            <div id="renderDemarcusPic"> </div>
+                  </a>
             </div>
+
             <div class="li-pokeball">
-                        <img id="Lizzy-pokeball" alt="red pokeball" src="Images/pokeball.png"
-                        width=150" height="70">
-                        <!-- will need to include selfie for render in images-->
-                     
-             <!-- <div id="renderLizzyPic">
+                  <a href="PokeL.html"> <img id="Lizzy-pokeball" alt="red pokeball" src="Images/pokeball.png" width=150"
+                              height="70"> </a>
+
+                  <!-- will need to include selfie for render in images-->
+
+                  <!-- <div id="renderLizzyPic">
                   <div class="modal fade" id="Liz-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
@@ -65,57 +66,60 @@
                   </div>
             </div>
              -->
-      </div>
-      <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Liz-Modal">
+            </div>
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Liz-Modal">
       Launch demo modal
     </button> -->
 
 
 
-<div class="specialBall">
-<!-- Our third Pokeball -->
- <h3> Choose this one for a limited time offer you can't refuse ! </h3>
- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
-      <img alt="golden pokeball" src="Images/golden-pokeball.png"
-      width=150" height="70">
-   </a>
-      <div>
-            <ul id="memeNames">
+            <div class="specialBall">
+                  <!-- Our third Pokeball -->
+                  <h3> Choose this one for a limited time offer you can't refuse ! </h3>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+                        <img alt="golden pokeball" src="Images/golden-pokeball.png" width=150" height="70">
+                  </a>
+                  <div>
+                        <ul id="memeNames">
 
-            </ul>
-      </div>
+                        </ul>
+                  </div>
 
-</div>
+            </div>
 
-<footer>
-      <div id="contact-us">
-<!-- this is where we will place our contact form -->
-<h3>Contact Us</h3>
-<nav>
-      <!-- these are the logos we will use in the footer -->
-      <div class="logos">
-      <a href="#">
-            <img alt="github-logo" src="Images/github.png"
-            width="50" height="70">
-         </a> 
-         <a href="#">
-            <img alt="Linkdin-logo" src="Images/Linkedin.png"
-            width="50" height="70">
-         </a> 
-         <a href="#">
-            <img alt="twitter-logo" src="Images/twitter.png"
-            width="50" height="70">
-         </a> 
-      </div>
-</nav>
+            <footer>
+                  <div id="contact-us">
+                        <!-- this is where we will place our contact form -->
+                        <h3>Contact Us</h3>
+                        <nav>
+                              <!-- these are the logos we will use in the footer -->
+                              <div class="logos">
+                                    <a href="#">
+                                          <img alt="github-logo" src="Images/github.png" width="50" height="70">
+                                    </a>
+                                    <a href="#">
+                                          <img alt="Linkdin-logo" src="Images/Linkedin.png" width="50" height="70">
+                                    </a>
+                                    <a href="#">
+                                          <img alt="twitter-logo" src="Images/twitter.png" width="50" height="70">
+                                    </a>
+                              </div>
+                        </nav>
 
 
-      <!-- javascript and bootstrap javascript tags below -->
-   <script src="main.js"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-       
+                        <!-- javascript and bootstrap javascript tags below -->
+                        <script src="main.js"></script>
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                              crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                              crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                              crossorigin="anonymous"></script>
+
 </body>
+
 </html>

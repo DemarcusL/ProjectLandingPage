@@ -1,5 +1,7 @@
 //=============================================== Globals ========================================================//
-let nameGathered = prompt('Hello, what is your name?');
+
+// let nameGathered = prompt('Hello, what is your name?');
+
 let dPokeBall = document.getElementsByClassName("d-pokeball"); // grabs the element with the class name.
 let liPokeBall = document.getElementsByClassName("li-pokeball"); // grabs the element with the class name
 let specialBallArea = document.getElementsByClassName("specialBall"); // grabs the element with the class name.

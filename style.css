@@ -10,12 +10,9 @@ html, body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-
-#specialBall {
-color: rgba(0, 0, 0, 0);
-
 }
+
+
 
 .card{
     position: relative;
@@ -30,5 +27,11 @@ color: rgba(0, 0, 0, 0);
 }
 .main-container  {
    text-align: center;
+
+}
+
+/* we want this section to create our scroll empty space */
+#specialBall {
    padding-top:10%;
+
 }
