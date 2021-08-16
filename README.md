@@ -49,3 +49,10 @@ How many people must review a PR?
 Who merges PRs?
 How often will you merge?
 How will you communicate that it’s time to merge?
+
+
+//==== WIREFRAME FOR PROJECT =====//
+
+![Page_1](https://user-images.githubusercontent.com/80016421/129589987-bb1e8e9e-6816-4acc-abec-16b836ce2074.png)![Page_2](https://user-images.githubusercontent.com/80016421/129589990-d69dd2cf-e6f4-487c-95c1-3142a5226329.png)
+![Page_3](https://user-images.githubusercontent.com/80016421/129589992-f8717661-15f1-4104-bb28-7c88750ef2c1.png)
+
