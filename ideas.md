@@ -8,14 +8,20 @@ Lizzy: We decided on a landing page that showcases both of our biographies. We w
 
 Option 2: There would be nummerous images on a page. they would be chests or random thing. when clicked, you would be transitioned to a new page for a suprise!
 
-Milestones
+
+Milestones: Completed
 -get our image linked to ur personal page first and then work on mouse over events.
 -onload, ask for name, store name. 
--pokeball is clicked.
--click should lead to personalized page
 -welcome message with user name should be displayed
 
+
+Milestones: TO DO
 -hover over for selfie image and appears w/ short bio.
 -'click to learn more' button loads at the bottom of bio. (empty page for now).
--when scrolled down or clicked, name collected will have been added to a list of vistors.
 -look into a mouse over evt instead of on-click, can save code and build cohesiveness.
+-Implement scroll feature to navigate the homepage.
+-Implement iframe onclick feature
+-set up message that will be dispalyed on each homepage. 
+-set up iframe for when ball is cliked
+
+-translate these issues to GitHub issues for Management tracking

@@ -38,16 +38,27 @@ resultsLI.appendChild(nameContent);
 // this should display it
 memeNames.appendChild(resultsLI);
 // console.log("names should display");
+}
+
+//Todo, get a creator for the message on each homepage to user.
+function messageOnLoadD() {
+//check for sanity
 
 }
 
 //Todo, get a creator for the message on each homepage to user.
+function messageOnLoadL() {
+//
+
+
+}
 
 //=================================== Demarcus ==========================================//
 
 
 //=================================== Lizzy =============================================//
 // CODE HERE LIZ
+// when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//
 
 //===== POE ======//
