@@ -3,6 +3,38 @@ color: white;
 
 }
 
+body {
+display:block;
+}
+
+#header {
+box-sizing: content-box;
+width: 95%;
+border: solid #2f386b 8px;
+padding: 5px;
+}
+
+#intro {
+box-sizing: content-box;
+width: 95%;
+border: solid #2f386b 8px;
+padding: 5px;
+
+}
+
 p {
+display:block;
 color: white;
+text-align: center;
+}
+
+#ul {
+display:block;
+color: white;
+
+box-sizing: content-box;
+width: 50%;
+border: solid #5B6DCD 10px;
+padding: 5px;
+
 }
