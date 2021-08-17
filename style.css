@@ -3,13 +3,35 @@
    
 } */
 
+/* used to upload an online font to the css */
+@font-face {
+    font-family: arcade;
+    src: url('arcadeclassic/ARCADECLASSIC.TTF');           
+  }
 
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+/* TODO: study documentation of 'webkit', 'moz', and 'o'. */
 html, body{ 
     background: url('/Images/starry.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 
@@ -24,6 +46,8 @@ html, body{
 {
     text-align: center;
     color:white;
+    font-family: arcade;
+    padding-top:40px;
 }
 .main-container  {
    text-align: center;
@@ -35,3 +59,46 @@ html, body{
    padding-top:10%;
 
 }
+
+.pokeball-pics {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+
+}
+
+.li-pokeball{
+   
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    
+}
+
+
+
+.de-pokeball{
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+   
+    
+}
+.specialBall{
+    padding-top:40%;
+   
+    
+}
+
+.specialBall  > h3 {
+    font-family: arcade;
+    color: rgb(133, 216, 133)
+}
+
+.specialBall > a > img{
+    margin-top:10%;
+}
+
+.contact-us{
+    color:white;
+    margin-top:30%;
+}
+/* TODO: Remove transparency grid on pictures// center pokeballs// add 8-bit font// add padding to golden pokeball// style footer. */
