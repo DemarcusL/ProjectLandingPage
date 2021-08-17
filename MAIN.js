@@ -163,6 +163,7 @@ $('#floating-coin').on('click', function()
 {
     $(this).hide(); // hide the element first, then create an iframe elementt and run it in autoplay!
     $('<iframe width="560" height="315" src="https://www.youtube.com/embed/EofOpQ7HP30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+   // I did it! I need for it to autoplay next!!
      .appendTo('.specialCoin');
 // This code works! We need to hide this picture and replace it with an iframe
 });
