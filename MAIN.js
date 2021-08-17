@@ -19,6 +19,7 @@ let namesOfPeople = [] // I intend to use this to store names of people who visi
 //===================================== Demarcus ========================================//
 
 // We want this process to happen on load. To gathere the users names data and store the name
+// we can use this for genrating a welcome message to the user on your bio page. 
 
 function nameOnLoad() {
 // i want to create something other than a simple prompt text
@@ -39,6 +40,8 @@ memeNames.appendChild(resultsLI);
 // console.log("names should display");
 
 }
+
+//Todo, get a creator for the message on each homepage to user.
 
 //=================================== Demarcus ==========================================//
 
