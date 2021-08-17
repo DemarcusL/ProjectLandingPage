@@ -1,8 +1,5 @@
 //=============================================== Globals ========================================================//
 
-// IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-// let nameGathered = prompt('Hello, what is your name?');
-
 let dPokeBall = document.getElementsByClassName("d-pokeball"); // grabs the element with the class name.
 let liPokeBall = document.getElementsByClassName("li-pokeball"); // grabs the element with the class name
 let specialBallArea = document.getElementsByClassName("specialBall"); // grabs the element with the class name.
@@ -15,6 +12,7 @@ let namesOfPeople = [] // I intend to use this to store names of people who visi
 let containerD = document.querySelector('containerD');//global for displaying
 let containerL = document.querySelector('containerL');//global for displaying
 
+let nameReuse = []; // names for redisplay
 
 //===================================== Things we may need ==================================// 
 //a render method for the names from saved list
@@ -28,6 +26,11 @@ let containerL = document.querySelector('containerL');//global for displaying
 
 function nameOnLoad() {
 //TODO: gather names
+// IMPORTANT: Uncomment nameGathered to make name function work on DEMO
+// let nameGathered = prompt('Hello, what is your name?');
+
+nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
+
 // i want to create something other than a simple prompt text
 console.log('The body has loaded');
 // i want this prompt displayed
@@ -36,7 +39,7 @@ console.log('The body has loaded');
 let nameContent = document.createTextNode(` Welcome ${nameGathered} !`);
 // console.log(nameContent);
 // This shuld generate a li of name entered
-let resultsLI = document.createElement('li');
+let resultsLI = document.createElement('ol');
 // console.log(resultsLI);
 //with the name gathered, we want to display it as a list item at the bottom of the page
 resultsLI.appendChild(nameContent);
@@ -46,18 +49,25 @@ memeNames.appendChild(resultsLI);
 // console.log("names should display");
 }
 
+// ==================== lets make a local storage for names called user for the key, and get the name from the arry. and add an handle for null =======//
+
+//===================== end of local =================//
+
 //TODO: get a creator for the message on each homepage to user.
 function messageOnLoadD() {
 //check for sanity
-console.log('The body has loaded');
-//Lets set the emessage being displayed
-let welcomeTxt = document.createTextNode(` Hello ${nameGathered} ! It is very nice to meet you. My name is Demarcus.`);
-//next we need to generate a p element for generating the message.
-let textArea = document.createElement('p');
-//now we need to append the message
-textArea.appendChild(welcomeTxt);
-//now we d to tpalay it
-containerD.appendChild(textArea);
+// console.log('The body has loaded');
+      for (let index = 0; index < nameReuse.length; index++) {
+            //Lets set the emessage being displayed
+            let welcomeTxt = document.createTextNode(` Hello ${nameReuse} ! It is very nice to meet you. My name is Demarcus.`);
+            //next we need to generate a p element for generating the message.
+            let textArea = document.createElement('p');
+            //now we need to append the message
+            textArea.appendChild(welcomeTxt);
+            //now we need to display it
+            containerD.appendChild(textArea);
+      }
+
 
 }
 
@@ -83,9 +93,10 @@ containerL.appendChild(textArea);
 // CODE HERE LIZ
 //TODO: When the image is clicked (gold coin), I want the video to appear in the BROWSER.
 // Get element by ID (Photo)
-let coin = document.getElementById('coin');
+let coin = document.getElementById('coin'); // ref to the function goes inside!
 // Get element by ID (video)
-let coinToVideo = document.getElementById('coin-video')
+let coinToVideo = document.getElementById('coin-video');
+ coinToVideo.append(coin)
 
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
