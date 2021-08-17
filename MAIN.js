@@ -27,7 +27,7 @@ let nameReuse = []; // names for redisplay
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      let nameGathered = prompt('Hello, what is your name?');
+    //   let nameGathered = prompt('Hello, what is your name?');
 
       nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
 
@@ -157,11 +157,12 @@ function messageOnLoadL() {
 
 //=================================== Lizzy =============================================//
 // CODE HERE LIZ
-// target the ID of coin
-// let goldcoin = document.getElementById('coin');
+// $(document).ready(function() {
+    
 
-// let createFrameEl = document.createElement()
-// ;
+
+// }); // end of document.ready
+    
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//

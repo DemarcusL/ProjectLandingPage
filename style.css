@@ -88,12 +88,12 @@ html, body{
     
 }
 
-.specialBall  > h3 {
+.specialCoin  > h3 {
     font-family: arcade;
     color: rgb(133, 216, 133)
 }
 
-.specialBall > a > img{
+.specialCoin > a > img{
     margin-top:10%;
 }
 
