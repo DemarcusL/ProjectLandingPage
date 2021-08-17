@@ -157,11 +157,17 @@ function messageOnLoadL() {
 
 //=================================== Lizzy =============================================//
 // CODE HERE LIZ
-// $(document).ready(function() {
+$(document).ready(function() {
     
+$('#floating-coin').on('click', function()
+{
+    $(this).hide(); // hide the element first, then create an iframe elementt and run it in autoplay!
+    $('<iframe width="560" height="315" src="https://www.youtube.com/embed/EofOpQ7HP30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+     .appendTo('.specialCoin');
+// This code works! We need to hide this picture and replace it with an iframe
+});
 
-
-// }); // end of document.ready
+}); // end of document.ready
     
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.

@@ -93,8 +93,9 @@ html, body{
     color: rgb(133, 216, 133)
 }
 
-.specialCoin > a > img{
+.specialCoin > #floating-coin {
     margin-top:10%;
+    
 }
 
 .contact-us{
