@@ -13,7 +13,7 @@ Milestones: Completed
 -get our image linked to ur personal page first and then work on mouse over events.
 -onload, ask for name, store name. 
 -welcome message with user name should be displayed
-
+-set up message that will be dispalyed on each homepage. 
 
 Milestones: TO DO
 -hover over for selfie image and appears w/ short bio.
@@ -21,7 +21,7 @@ Milestones: TO DO
 -look into a mouse over evt instead of on-click, can save code and build cohesiveness.
 -Implement scroll feature to navigate the homepage.
 -Implement iframe onclick feature
--set up message that will be dispalyed on each homepage. 
--set up iframe for when ball is cliked
+
+
 
 -translate these issues to GitHub issues for Management tracking
