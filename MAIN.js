@@ -2,7 +2,7 @@
 
 let dPokeBall = document.getElementsByClassName("d-pokeball"); // grabs the element with the class name.
 let liPokeBall = document.getElementsByClassName("li-pokeball"); // grabs the element with the class name
-let specialBallArea = document.getElementsByClassName("specialBall"); // grabs the element with the class name.
+let specialBallArea = document.getElementsByClassName("specialCoin"); // grabs the element with the class name.
 let contactUsArea = document.getElementById('contact-us'); // grabs the element with the class name.
 let lizPokeballImg = document.getElementById('Lizzy-pokeball'); // grabbed pokeball img id.
 let lizPokeballModal = document.getElementById('Liz-Modal');
@@ -31,6 +31,7 @@ function nameOnLoad() {
 
 nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
 
+
 // i want to create something other than a simple prompt text
 console.log('The body has loaded');
 // i want this prompt displayed
@@ -47,26 +48,58 @@ resultsLI.appendChild(nameContent);
 // this should display it
 memeNames.appendChild(resultsLI);
 // console.log("names should display");
+//we want the locale storage updated after the name is gatehred and pushed
+updateLocalStorage();
 }
 
-// ==================== lets make a local storage for names called user for the key, and get the name from the arry. and add an handle for null =======//
+// ==================== lets make a local storage for names called user for the key, and get the name from the arry. and add an handle for null ========//
+function updateLocalStorage() {
+    console.log("Updating localStorage for names !");
+    const nameSaved = JSON.stringify(nameReuse);
+    console.log(` The names saved are ${nameSaved}}`);
+    // key, value pairs
+    localStorage.setItem('names', nameSaved);
+}
 
 //===================== end of local =================//
+//======================== Let get the storage =========================//
+      function getLocalStorage() {
+      //console.log("Get stored data from the local storage!!");
+
+      // retrieve data from local storage
+      const nameSaved = localStorage.getItem("names");
+
+      // convert the data (array) from a string to something that we can use in JavaScript.
+      const nameDisplay = JSON.parse(nameSaved);
+
+      // If this is the first time we visit the page, there will not be an array for us to use in localStorage, we need to crorect or that
+      if (nameDisplay !== null) {
+            nameReuse = namesDisplay ;
+      }
+
+
+      // let's render the old data that we retrieved back from the localStorage
+      // renderData();
+
+      };
+
+//======================= end of retireve ==============================//
 
 //TODO: get a creator for the message on each homepage to user.
 function messageOnLoadD() {
 //check for sanity
 // console.log('The body has loaded');
-      for (let index = 0; index < nameReuse.length; index++) {
-            //Lets set the emessage being displayed
-            let welcomeTxt = document.createTextNode(` Hello ${nameReuse} ! It is very nice to meet you. My name is Demarcus.`);
-            //next we need to generate a p element for generating the message.
-            let textArea = document.createElement('p');
-            //now we need to append the message
-            textArea.appendChild(welcomeTxt);
-            //now we need to display it
-            containerD.appendChild(textArea);
+for (let index = 0; index < nameReuse.length; index++) {
+      //Lets set the emessage being displayed
+      let welcomeTxt = document.createTextNode(` Hello ${nameReuse} ! It is very nice to meet you. My name is Demarcus.`);
+      //next we need to generate a p element for generating the message.
+      let textArea = document.createElement('p');
+      //now we need to append the message
+      textArea.appendChild(welcomeTxt);
+      //now we need to display it
+      containerD.appendChild(textArea);
       }
+
 
 
 }
@@ -86,18 +119,17 @@ containerL.appendChild(textArea);
 
 }
 
+//  End Of 
 //=================================== Demarcus ==========================================//
 
 
 //=================================== Lizzy =============================================//
 // CODE HERE LIZ
-//TODO: When the image is clicked (gold coin), I want the video to appear in the BROWSER.
-// Get element by ID (Photo)
-let coin = document.getElementById('coin'); // ref to the function goes inside!
-// Get element by ID (video)
-let coinToVideo = document.getElementById('coin-video');
- coinToVideo.append(coin)
+// target the ID of coin
+let goldcoin = document.getElementById('coin');
 
+let createFrameEl = document.createElement()
+;
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//
