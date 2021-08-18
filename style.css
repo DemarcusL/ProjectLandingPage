@@ -90,12 +90,18 @@ html, body{
 
 .specialCoin  > h3 {
     font-family: arcade;
-    color: rgb(133, 216, 133)
+    color: rgb(133, 216, 133);
+    margin-top:50%;
+
 }
 
-.specialCoin > #floating-coin {
-    margin-top:10%;
+ #floating-coin {
+    padding-top:30px;
     
+    
+}
+#playerContainer{
+    padding-top:10%;
 }
 
 .contact-us{
@@ -103,3 +109,4 @@ html, body{
     margin-top:30%;
 }
 /* TODO: Implement 'event listener' to generate a modal popup when mouse hovers over pokeball!
+
