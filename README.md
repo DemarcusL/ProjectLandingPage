@@ -1,3 +1,4 @@
+
 # TBARepo
 
 By: Lizzy and Demarcus
@@ -56,4 +57,4 @@ How will you communicate that it’s time to merge?
 ![Page_3](https://user-images.githubusercontent.com/80016421/129589992-f8717661-15f1-4104-bb28-7c88750ef2c1.png)
 
 //========== Domain Model ========//
-![Domain](Images\DomainModel.PNG)
+<img width="578" alt="DomainModel" src="https://user-images.githubusercontent.com/85797197/129974350-d8bd4369-b2a0-469e-8e4b-513da6a1aa3f.PNG">
