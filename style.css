@@ -42,7 +42,7 @@ html, body{
     border: none;
 }
 
- h1 {
+.homeTop {
     display: block;
     text-align: center;
     color:white;
@@ -51,6 +51,7 @@ html, body{
     height: 10px;
    
 }
+
 
 .main-container  {
    text-align: center;

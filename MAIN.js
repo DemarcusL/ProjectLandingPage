@@ -27,10 +27,10 @@ let nameReuse = []; // names for redisplay
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      let nameGathered = prompt('Hello, what is your name?');
+      // let nameGathered = prompt('Hello, what is your name?');
 
       //I want to add a class to the name to be targeted with css
-      nameGathered.classList.add('nameText');
+      // nameGathered.classList.add('nameText');
 
       nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
       
@@ -56,9 +56,10 @@ function nameOnLoad() {
 }
 
 // ==================== lets make a local storage for names called user for the key, and get the name from the arry. and add an handle for null ========//
+//push in the nameGathered w a parametere for setting it
 function updateLocalStorage(nameToBeSaved) {
       console.log("Updating localStorage for names !");
-      //key and value
+      //key and value, names is the key
       localStorage.setItem('names', nameToBeSaved);
 
 }
@@ -73,6 +74,7 @@ function getLocalStorage() {
       const nameSaved = localStorage.getItem("names");
       console.log('setting saved names to nameSaved')
       let nameDisplay = nameSaved;
+
       // If this is the first time we visit the page, there will not be an array for us to use in localStorage, we need to crorect or that
       if (nameDisplay === null) {
             console.log('No name in get Local Storage func')
@@ -91,46 +93,21 @@ function getLocalStorage() {
 
 //======================= end of retireve ==============================//
 
-//====================== lets render the message =========================//
-//
-function renderHelloD(name) {
-      // containerD.innerText = '';
-
-      let messageTxtD = document.createElement('p');
-
-      messageTxtD.innerText = ` Welcome here young travler, my assistant tells me your name is ${name}  `;
-
-      // resultsLI.appendChild(resultsLI);
-      containerD.appendChild(messageTxtD);
-
-
-}
-
-function renderHelloL(name) {
-      // containerD.innerText = '';
-
-      let messageTxtD = document.createElement('p');
-
-      messageTxtD.innerText = ` Welcome here young travler, my assistant tells me your name is ${name}  `;
-
-      // resultsLI.appendChild(resultsLI);
-      containerL.appendChild(messageTxtD);
-
-
-}
-//================= end of render ============================//
-//================ Now lets call when our page loads =====================//
+//====================== Start of message generator ===============//
 //TODO: get a creator for the message on each homepage to user.
 function messageOnLoadD() {
       //check for sanity
       // console.log('The body has loaded');
+      //this is pulling from the returned storage value of nameSaved and setting it to user name
       userName = getLocalStorage();
+      //i want to give the rendered name a class
+      // userName.className += "nameCSS";
       // let's render the old data that we retrieved back from the localStorage
       // we can set a check for is user name is null, render hello, if not withan Else, we can call the render
       if (userName === null) {
             console.log('No name detected')
       }
-      else {
+      else { // when a name is detected, we will do the render function while passing in the name from storage
             renderHelloD(userName);
       }
 
@@ -141,18 +118,49 @@ function messageOnLoadD() {
 function messageOnLoadL() {
       //check for sanity
       // console.log('The body has loaded');
-          userName = getLocalStorage();
+      //this is pulling from the returned storage value of nameSaved and setting it to user name
+      userName = getLocalStorage();
+      //i want to give the rendered name a class
+      // userName.className += "nameCSS";
       // let's render the old data that we retrieved back from the localStorage
       // we can set a check for is user name is null, render hello, if not withan Else, we can call the render
       if (userName === null) {
             console.log('No name detected')
       }
-      else {
+      else { // when a name is detected, we will do the render function while passing in the name from storage
             renderHelloL(userName);
       }
 
 
 }
+//====================== end of message generator ===============//
+
+//====================== lets render the message =========================//
+function renderHelloD(name) {
+      // with the names passed in from storage, we are making an element
+      let messageTxtD = document.createElement('p');
+      //the inner text will read as such to display
+      messageTxtD.innerText = ` Welcome here young travler, my assistant tells me your name is ${name}  `;
+      // we and this rendered in the DOM of the browser elements, so append them
+      containerD.appendChild(messageTxtD);
+
+
+}
+
+function renderHelloL(name) {
+      // with the names passed in from storage, we are making an element
+      let messageTxtD = document.createElement('h1');
+      //the inner text will read as such to display
+      messageTxtD.innerText = ` Welcome here young travler, my assistant tells me your name is ${name}  `;
+
+      // we and this rendered in the DOM of the browser elements, so append them
+      containerL.appendChild(messageTxtD);
+
+
+}
+//================= end of render ============================//
+//================ Now lets call when our page loads =====================//
+
 
 //  End Of 
 //=================================== Demarcus ==========================================//
