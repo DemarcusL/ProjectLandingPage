@@ -27,7 +27,12 @@ let nameReuse = []; // names for redisplay
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      let nameGathered = prompt('Hello, what is your name?');
+      let nameGathered = prompt('Hello, what is your name?') || getLocalStorage(); // It asks for a name if the user is new, or it returns the name stored.
+      // how can we get it to stope the prompt??
+      if(nameGathered === getLocalStorage())
+      {
+            alert(`Welcome back, ${nameGathered} !`); // If the name remains the same, it will welcome the user back!
+      }
 
       //I want to add a class to the name to be targeted with css
       // nameGathered.classList.add('nameText');
