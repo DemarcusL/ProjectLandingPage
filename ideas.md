@@ -21,7 +21,8 @@ Milestones: TO DO
 -look into a mouse over evt instead of on-click, can save code and build cohesiveness.
 -Implement scroll feature to navigate the homepage.
 -Implement iframe onclick feature
-
+-add css to the personal message generated
+-add css to HOMEPAGE Name generated
 
 
 -translate these issues to GitHub issues for Management tracking

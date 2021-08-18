@@ -40,7 +40,7 @@ function nameOnLoad() {
       let nameContent = document.createTextNode(` Welcome ${nameGathered} !`);
       // console.log(nameContent);
       // This shuld generate a li of name entered
-      let resultsLI = document.createElement('ol');
+      let resultsLI = document.createElement('h1');
       // console.log(resultsLI);
       //with the name gathered, we want to display it as a list item at the bottom of the page
       resultsLI.appendChild(nameContent);
@@ -170,7 +170,8 @@ $('#floating-coin').on('click', function()
 });
 
 }); // end of document.ready
-    // TODO: Create a scroll down animation functon with CSS and JS
+
+// TODO: Create a scroll down animation functon with CSS and JS
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//
