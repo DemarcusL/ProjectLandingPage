@@ -14,6 +14,7 @@ Milestones: Completed
 -onload, ask for name, store name. 
 -welcome message with user name should be displayed
 -set up message that will be dispalyed on each homepage. 
+-add css to HOMEPAGE Name generated
 
 Milestones: TO DO
 -hover over for selfie image and appears w/ short bio.
@@ -23,6 +24,7 @@ Milestones: TO DO
 -Implement iframe onclick feature
 -add css to the personal message generated
 -add css to HOMEPAGE Name generated
+-change margin soacing on text element to move img up
 
 
 -translate these issues to GitHub issues for Management tracking

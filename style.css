@@ -44,10 +44,12 @@ html, body{
 
  h1 
 {
+    display: block;
     text-align: center;
     color:white;
     font-family: arcade;
-    padding-top:40px;
+    padding-top:5px;
+    /* margin: 9px; */
 }
 .main-container  {
    text-align: center;

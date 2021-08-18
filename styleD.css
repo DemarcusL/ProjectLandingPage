@@ -23,13 +23,13 @@ padding: 5px;
 }
 
 p {
-display:block;
+display: block;
 color: white;
 text-align: center;
 }
 
 #ul {
-display:block;
+display: block;
 color: white;
 
 box-sizing: content-box;
