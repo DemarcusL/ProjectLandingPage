@@ -1,20 +1,22 @@
 .containerD {
-color: white;
+      color: white;
 
 }
 
 body {
-display:block;
+      display:block;
 }
 
 h1{
-    font-family: arcade;
+      font-family: arcade;
+      letter-spacing: 2px;
+      word-spacing: 10px;
 }
 
-#header {
+#header , #intro {
 box-sizing: content-box;
 width: 95%;
-border: solid #2f386b 8px;
+border: solid #2f386b 5px;
 padding: 5px;
 }
 
@@ -25,20 +27,21 @@ text-decoration: none;
 color: red;
 float: left;
 margin-bottom: 10%;
+list-style-type: circle;
 }
 
 .linkM{
-text-decoration: none;
+text-decoration: wavy red ;
 color: red;
 }
 
-#intro {
+/* #intro {
 box-sizing: content-box;
 width: 95%;
-border: solid #2f386b 8px;
+border: solid #2f386b 5px;
 padding: 5px;
 
-}
+} */
 
 p {
 display: block;
@@ -52,3 +55,10 @@ color: white;
 width: 20%;
 padding: 4px;
 }
+
+#intro {
+      letter-spacing: 1px;
+      word-spacing: 8px;
+      font: ;
+}
+

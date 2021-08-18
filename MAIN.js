@@ -27,7 +27,7 @@ let nameReuse = []; // names for redisplay
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      // let nameGathered = prompt('Hello, what is your name?');
+      let nameGathered = prompt('Hello, what is your name?');
 
       //I want to add a class to the name to be targeted with css
       // nameGathered.classList.add('nameText');
@@ -140,7 +140,7 @@ function renderHelloD(name) {
       // with the names passed in from storage, we are making an element
       let messageTxtD = document.createElement('p');
       //the inner text will read as such to display
-      messageTxtD.innerText = ` Welcome here young travler, my assistant tells me your name is ${name}  `;
+      messageTxtD.innerText = ` Welcome here travler, the winds tell me your name is ${name}. Well my name is Demarcus and welcome to our introduction !  `;
       // we and this rendered in the DOM of the browser elements, so append them
       containerD.appendChild(messageTxtD);
 
