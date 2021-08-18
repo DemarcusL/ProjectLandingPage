@@ -58,3 +58,12 @@ How will you communicate that it’s time to merge?
 
 //========== Domain Model ========//
 <img width="578" alt="DomainModel" src="https://user-images.githubusercontent.com/85797197/129974350-d8bd4369-b2a0-469e-8e4b-513da6a1aa3f.PNG">
+
+
+//========= USER STORIES =========//
+
+1. As a user, I want a page that expresses itself through it's functionality.
+2. As a user, I want to be given a choice upon arrival on the site, so that once said choice is made. I will be introduced to the sites creators one by one.
+3. As a user, I want to be able to press a button, so that when button is pressed, it will display a video from an external source. 
+4. As a user, I want to veiw the contributing developer's personal sites to learn more about who they are.
+5. As a user, I want to asked for a name, so that when I visit a page, I will be greeted with my name entered.
