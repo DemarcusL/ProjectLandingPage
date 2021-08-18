@@ -29,8 +29,11 @@ function nameOnLoad() {
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
       let nameGathered = prompt('Hello, what is your name?');
 
-      nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
+      //I want to add a class to the name to be targeted with css
+      nameGathered.classList.add('nameText');
 
+      nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
+      
 
       // i want to create something other than a simple prompt text
       console.log('The body has loaded');

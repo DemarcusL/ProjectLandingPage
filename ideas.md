@@ -14,7 +14,7 @@ Milestones: Completed
 -onload, ask for name, store name. 
 -welcome message with user name should be displayed
 -set up message that will be dispalyed on each homepage. 
--add css to HOMEPAGE Name generated
+
 
 Milestones: TO DO
 -hover over for selfie image and appears w/ short bio.
