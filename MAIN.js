@@ -27,7 +27,7 @@ let nameReuse = []; // names for redisplay
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-    //   let nameGathered = prompt('Hello, what is your name?');
+      let nameGathered = prompt('Hello, what is your name?');
 
       nameReuse.push(nameGathered); // this should put the name entered into an array so they can be reached by the other functions
 
