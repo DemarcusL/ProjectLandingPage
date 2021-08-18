@@ -172,6 +172,28 @@ $('#floating-coin').on('click', function()
 // This code works! We need to hide this picture and replace it with an iframe
 });
 
+// Add smooth scrolling to all links. on the click of the link an event will happen!
+$("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") { // if the hash is not equal to an empty or broken string, then the event will continue
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        let hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+      } // end if
+});
+
+      
 }); // end of document.ready
 
 // TODO: Create a scroll down animation functon with CSS and JS
