@@ -209,7 +209,7 @@ $("a").on('click', function(event) {
       
 }); // end of document.ready
 
-// TODO: Create a scroll down animation functon with CSS and JS
+
 
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//
