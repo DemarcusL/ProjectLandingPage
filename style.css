@@ -131,5 +131,20 @@ html, body{
       
       padding-top:40px;
   }
-/* TODO: Implement 'event listener' to generate a modal popup when mouse hovers over pokeball!
 
+
+
+ /*
+
+ Making a scroll up button 
+
+  */
+
+
+#btn-back-to-top
+{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:none;
+}

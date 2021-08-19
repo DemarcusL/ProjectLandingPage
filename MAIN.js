@@ -23,7 +23,7 @@ let nameReuse = []; // names for redisplay by other functions
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      let nameGathered = prompt('Hello, what is your name?') || getLocalStorage(); // It asks for a name if the user is new, or it returns the name stored.
+      // let nameGathered = prompt('Hello, what is your name?') || getLocalStorage(); // It asks for a name if the user is new, or it returns the name stored.
       // we want to account for null 
       if (nameGathered == null || nameGathered == " " || nameGathered === "No" || nameGathered === "no" || nameGathered === "n") {
             console.log('No Entry Detected, be cautious !');
@@ -214,7 +214,7 @@ $(document).ready(function () {
                   // Store hash
                   let hash = this.hash;
 
-                  $('html, body').animate({
+                  $('html, body').animate({ 
                         scrollTop: $(hash).offset().top
                   }, 800, function () {
 
@@ -227,8 +227,35 @@ $(document).ready(function () {
 
 }); // end of document.ready
 
+//===== BACK TO TOP BUTTON ======//
+let myButton = document.getElementById("btn-back-to-top"); // get the element by the ID
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { // when the browser window scrolls, this function runs
+      scrollFunction(); // calling the function!
+}
+
+function scrollFunction() {// function to determine what happens when the window scrolls
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) // if the body or the document element is more than 20, the arrow will show
+
+      {
+            myButton.style.display = "block"; // the button will show
+      }
+      else{
+            myButton.style.display = "none"; // the button will disapper 
+      }
+}
+
+// when the user clicks on the document, scroll back up!
+myButton.addEventListener("click", backToTop); // when the user clicks the button, a function will run
+
+function backToTop() {
+      document.body.scrollTop = 0; // back to 0 pix
+      document.documentElement.scrollTop = 0; // back to 0 pix or the top of the HTML page!
+}
 
 
+//====END OF BACK TO TOP BUTTON===//
 // when page loads, nothing is clicked. then when the ball is pressed. a new ul is created to replace the old one. and in the created function the new created ul can hold the embedded iframe link for that to be displayed.
 //=================================== Lizzy =============================================//
 
