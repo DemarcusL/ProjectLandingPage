@@ -1,9 +1,49 @@
 
 html, body{ 
-    background: url('Images/snowy.png') no-repeat center center fixed; 
+    background: url('/Images/snowy.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
 }
+
+.card{
+    text-align: center;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        width: 50px;%;
+}
+    
+
+/* .hero-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+} */
+
+#hero-card
+{
+    text-align: center;
+}
+
+ul > li{
+    list-style: none;
+    position: relative;
+    left:-15px;
+    padding: 5px;
+}
+.btn{
+    position: relative;
+    left: -20px;
+    margin-top:10px;
+    
+} 
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }

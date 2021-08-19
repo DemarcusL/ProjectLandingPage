@@ -178,7 +178,8 @@ function renderHelloL(name) {
             // with the names passed in from storage, we are making an element
             let messageTxtL = document.createElement('p');
             //the inner text will read as such to display
-            messageTxtL.innerText = ` Welcome here travler, your name is ${name}. Well my name is Lizzy !  `;
+            messageTxtL.innerText = ` Welcome, ${name}. My name is Lizzy,
+             frontend developer from Memphis,TN!  `;
             // we and this rendered in the DOM of the browser elements, so append them
             containerL.appendChild(messageTxtL);
       }
