@@ -5,7 +5,6 @@ let liPokeBall = document.getElementsByClassName("li-pokeball"); // grabs the el
 let specialBallArea = document.getElementsByClassName("specialCoin"); // grabs the element with the class name.
 let contactUsArea = document.getElementById('contact-us'); // grabs the element with the class name.
 let lizPokeballImg = document.getElementById('Lizzy-pokeball'); // grabbed pokeball img id.
-let lizPokeballModal = document.getElementById('Liz-Modal');
 let memeNames = document.getElementById('memeNames');
 // let namesOfPeople = [] // I intend to use this to store names of people who visit to render a list of past visitors
 
@@ -178,8 +177,8 @@ function renderHelloL(name) {
             // with the names passed in from storage, we are making an element
             let messageTxtL = document.createElement('p');
             //the inner text will read as such to display
-            messageTxtL.innerText = ` Welcome, ${name}. My name is Lizzy,
-             frontend developer from Memphis,TN!  `;
+            messageTxtL.innerText = ` Welcome, ${name}. My name is Lizzy, a
+             Front-end Software Developer from Memphis, TN!  `;
             // we and this rendered in the DOM of the browser elements, so append them
             containerL.appendChild(messageTxtL);
       }

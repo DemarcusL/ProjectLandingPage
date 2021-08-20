@@ -1,24 +1,4 @@
-getLocalStorage();
 
-//Todo, get a creator for the message on each homepage to user.
-function messageOnLoadL() {
-    //this is pulling from the returned storage value of nameSaved and setting it to user name
-    userName = getLocalStorage();
-
-    //i wanted to give the rendered name a class
-    // userName.className += "nameCSS";
-
-    // let's render the old data that we retrieved back from the localStorage
-    // we can set a check for is user name is null, render hello, if not withan Else, we can call the render
-    if ( userName === null || userName === " ") {
-          console.log('No name detected')
-    }
-    else { // when a name is detected, we will do the render function while passing in the name from storage
-          renderHelloL(userName);
-          console.log('running render L');
-    }
-
-}
 
 // creating the button to turn into an iframe!
 
@@ -36,3 +16,33 @@ $("#tune-button").on("click", function(event) {
 });
 
 });
+
+//===== BACK TO TOP BUTTON ======//
+let myButton2 = document.getElementById("btn-back-to-top"); // get the element by the ID
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { // when the browser window scrolls, this function runs
+      scrollFunction(); // calling the function!
+}
+
+function scrollFunction() {// function to determine what happens when the window scrolls
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1 ) // if the body or the document element is more than 20, the arrow will show
+
+      {
+            myButton2.style.display = "block"; // the button will show
+      }
+      else{
+            myButton2.style.display = "none"; // the button will disapper 
+      }
+}
+
+// when the user clicks on the document, scroll back up!
+myButton2.addEventListener("click", backToTop); // when the user clicks the button, a function will run
+
+function backToTop() {
+      document.body.scrollTop = 0; // back to 0 pix
+      document.documentElement.scrollTop = 0; // back to 0 pix or the top of the HTML page!
+}
+
+
+//====END OF BACK TO TOP BUTTON===//
