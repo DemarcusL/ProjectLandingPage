@@ -22,7 +22,7 @@ let nameReuse = []; // names for redisplay by other functions
 function nameOnLoad() {
       //TODO: gather names
       // IMPORTANT: Uncomment nameGathered to make name function work on DEMO
-      // let nameGathered = prompt('Hello, what is your name?') || getLocalStorage(); // It asks for a name if the user is new, or it returns the name stored.
+      let nameGathered = prompt('Hello, what is your name?') || getLocalStorage(); // It asks for a name if the user is new, or it returns the name stored.
       // we want to account for null 
       if (nameGathered == null || nameGathered == " " || nameGathered === "No" || nameGathered === "no" || nameGathered === "n") {
             console.log('No Entry Detected, be cautious !');
@@ -157,7 +157,7 @@ function renderHelloD(name) {
             // with the names passed in from storage, we are making an element
             let messageTxtD = document.createElement('p');
             //the inner text will read as such to display
-            messageTxtD.innerText = ` Welcome here travler, the winds tell me your name is ${name}. Well my name is Demarcus !  `;
+            messageTxtD.innerText = ` Welcome here travler, your name is ${name} I understand. Well my name is Demarcus ! I am a Developer from Memphis, TN. `;
             // we and this rendered in the DOM of the browser elements, so append them
             containerD.appendChild(messageTxtD);
       }
@@ -196,7 +196,7 @@ $(document).ready(function () {
 
       $('#floating-coin').on('click', function () {
             $(this).hide(); // hide the element first, then create an iframe elementt and run it in autoplay!
-            $('<iframe width="560" height="315" src="https://www.youtube.com/embed/EofOpQ7HP30?autoplay=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            $('<iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 
                   // I did it! I need for it to autoplay next!!
                   .appendTo('.specialCoin');
